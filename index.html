@@ -42,7 +42,13 @@
         </nav>
 
         <div class="header-actions">
-          <a class="btn btn-primary nav-cta" href="mailto:hello@revolutionclo.com">Start Project</a>
+          <label class="language-control" for="site-language">
+            <span class="sr-only">Select language</span>
+            <select id="site-language" class="language-select" aria-label="Select language">
+              <option value="en">English</option>
+              <option value="de">Deutsch</option>
+            </select>
+          </label>
           <button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false" title="Toggle theme">
             <span class="theme-icon theme-icon-sun" aria-hidden="true">&#9788;</span>
             <span class="theme-icon theme-icon-moon" aria-hidden="true">&#9790;</span>
@@ -61,10 +67,6 @@
               Partner with Revolution Clo for end-to-end custom clothing manufacturing. We specialize in OEM,
               ODM, and cut &amp; sew production for hoodies, t-shirts, activewear, and more.
             </p>
-            <div class="cta-row">
-              <a class="btn btn-primary" href="mailto:hello@revolutionclo.com">Request Quote</a>
-              <a class="btn btn-secondary" href="https://wa.me/905398761350" target="_blank" rel="noreferrer">Contact via WhatsApp</a>
-            </div>
             <div class="stats-row" aria-label="Summary statistics">
               <div>
                 <strong>50+</strong>
@@ -138,6 +140,44 @@
                   Our cut &amp; sew manufacturing capabilities handle complex garment construction with precision for
                   custom clothing production. From pattern cutting to final stitching, we ensure consistent quality.
                 </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="behind-the-scenes" class="section production-video-section light-section">
+        <div class="container">
+          <div class="section-header center">
+            <p class="eyebrow accent">Behind the scenes</p>
+            <h2>Our Production in Motion.</h2>
+            <p class="section-subtitle">
+              Take a closer look at our production facility and the meticulous processes we follow to ensure every
+              garment meets the highest quality standards.
+            </p>
+          </div>
+
+          <div class="production-video-grid">
+            <article class="production-video-card">
+              <div class="production-video-frame">
+                <video
+                  controls
+                  preload="none"
+                  poster="https://revolutionclo.com/images/gallery/production.avif"
+                  aria-label="Video tour of our production facility"
+                ></video>
+                <span class="production-video-label">Our Facility</span>
+              </div>
+            </article>
+            <article class="production-video-card">
+              <div class="production-video-frame">
+                <video
+                  controls
+                  preload="none"
+                  poster="https://revolutionclo.com/images/gallery/fabrics.avif"
+                  aria-label="Video showing our garment production process"
+                ></video>
+                <span class="production-video-label">Production Process</span>
               </div>
             </article>
           </div>
@@ -235,7 +275,7 @@
       <section id="capabilities" class="section light-section">
         <div class="container">
           <div class="section-header center">
-            <p class="eyebrow accent">Behind the scenes</p>
+            <p class="eyebrow accent">Production expertise</p>
             <h2>Our Manufacturing Capabilities</h2>
             <p class="section-subtitle">We handle the heavy lifting. From tech packs to logistics.</p>
           </div>
@@ -392,18 +432,6 @@
         </div>
       </section>
 
-      <section class="cta-banner">
-        <div class="container cta-banner-inner">
-          <div>
-            <p class="eyebrow accent">Ready to start?</p>
-            <h2>Ready to Start Your Custom Clothing Production?</h2>
-          </div>
-          <div class="cta-action-row">
-            <a class="btn btn-primary" href="mailto:hello@revolutionclo.com">Email Inquiry</a>
-            <a class="btn btn-secondary" href="https://wa.me/905398761350" target="_blank" rel="noreferrer">Chat on WhatsApp</a>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer id="contact" class="site-footer">
