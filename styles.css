@@ -18,6 +18,8 @@
   --light-bg: var(--bg-soft);
   --light-text: var(--text);
   --light-muted: var(--muted);
+  --section-wash: rgba(12, 12, 12, 0.86);
+  --section-highlight: rgba(17, 17, 17, 0.32);
   --shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
   --radius: 22px;
   --container: 1200px;
@@ -43,6 +45,8 @@ body[data-theme="light"] {
   --light-bg: #ffffff;
   --light-text: #111114;
   --light-muted: #4e4e57;
+  --section-wash: rgba(255, 255, 255, 0.88);
+  --section-highlight: rgba(255, 255, 255, 0.4);
   --shadow: 0 18px 45px rgba(75, 55, 35, 0.14);
 }
 
@@ -53,12 +57,84 @@ html {
 }
 
 body {
+  position: relative;
+  isolation: isolate;
   margin: 0;
   font-family: 'Manrope', sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
   transition: background-color 0.45s ease, color 0.45s ease;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  pointer-events: none;
+}
+
+body::before {
+  inset: 0;
+  opacity: 0;
+  background-image:
+    radial-gradient(circle at 7% 17%, rgba(255, 255, 255, 0.9) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 18% 72%, rgba(210, 225, 255, 0.78) 0 1px, transparent 1.8px),
+    radial-gradient(circle at 31% 34%, rgba(255, 255, 255, 0.72) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 43% 86%, rgba(210, 225, 255, 0.68) 0 1px, transparent 1.8px),
+    radial-gradient(circle at 57% 13%, rgba(255, 255, 255, 0.82) 0 1px, transparent 1.8px),
+    radial-gradient(circle at 68% 59%, rgba(210, 225, 255, 0.7) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 82% 27%, rgba(255, 255, 255, 0.76) 0 1px, transparent 1.8px),
+    radial-gradient(circle at 93% 78%, rgba(210, 225, 255, 0.76) 0 1px, transparent 1.7px);
+  background-repeat: no-repeat;
+  animation: none;
+  will-change: transform, opacity;
+}
+
+body[data-theme="dark"]::before {
+  opacity: 0.28;
+  animation: star-drift 48s ease-in-out infinite alternate, star-twinkle 6s ease-in-out infinite alternate;
+}
+
+body[data-theme="light"]::before {
+  opacity: 0;
+  animation: none;
+}
+
+body::after {
+  top: 96px;
+  right: clamp(22px, 8vw, 120px);
+  width: 112px;
+  height: 50px;
+  opacity: 0;
+  background-image:
+    radial-gradient(circle at 88px 13px, #f2cb4d 0 7px, transparent 8px),
+    radial-gradient(circle at 27px 29px, #ffffff 0 11px, transparent 12px),
+    radial-gradient(circle at 44px 23px, #ffffff 0 15px, transparent 16px),
+    radial-gradient(ellipse at 42px 35px, #ffffff 0 27px, transparent 28px);
+  filter: drop-shadow(0 3px 8px rgba(24, 24, 35, 0.12));
+  animation: cloud-drift 28s ease-in-out infinite alternate;
+  will-change: transform, opacity;
+}
+
+body[data-theme="light"]::after {
+  opacity: 0.72;
+}
+
+@keyframes star-drift {
+  from { transform: translate3d(-2px, 0, 0); }
+  to { transform: translate3d(5px, -4px, 0); }
+}
+
+@keyframes star-twinkle {
+  from { opacity: 0.18; }
+  to { opacity: 0.34; }
+}
+
+@keyframes cloud-drift {
+  from { transform: translate3d(-5px, 0, 0); }
+  to { transform: translate3d(5px, 2px, 0); }
 }
 
 body,
@@ -370,7 +446,7 @@ body[data-theme="light"] .theme-icon-moon {
 
 .hero {
   padding: 80px 0 60px;
-  background: radial-gradient(circle at top right, var(--accent-soft), transparent 30%), var(--bg);
+  background: radial-gradient(circle at top right, var(--accent-soft), transparent 30%), transparent;
 }
 
 .hero-grid {
@@ -543,13 +619,13 @@ body[data-theme="light"] .theme-icon-moon {
 }
 
 .dark-section {
-  background: var(--bg);
+  background: var(--section-wash);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
 
 body[data-theme="light"] .dark-section {
-  background: var(--bg-soft);
+  background: var(--section-wash);
 }
 
 .split-block {
@@ -636,11 +712,11 @@ body[data-theme="light"] .dark-section {
 }
 
 .process-section {
-  background: linear-gradient(180deg, rgba(17,17,17,0.8), rgba(17,17,17,0)), var(--bg-soft);
+  background: linear-gradient(180deg, var(--section-highlight), transparent), transparent;
 }
 
 body[data-theme="light"] .process-section {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.48), rgba(255, 255, 255, 0)), var(--bg-soft);
+  background: linear-gradient(180deg, var(--section-highlight), transparent), transparent;
 }
 
 .feature-columns {
@@ -666,7 +742,7 @@ body[data-theme="light"] .process-section {
 }
 
 .light-section {
-  background: var(--light-bg);
+  background: var(--section-wash);
   color: var(--light-text);
 }
 
@@ -736,13 +812,13 @@ body[data-theme="light"] .process-section {
 }
 
 .about-section {
-  background: var(--bg);
+  background: var(--section-wash);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
 
 body[data-theme="light"] .about-section {
-  background: var(--bg-soft);
+  background: var(--section-wash);
 }
 
 .about-grid {
@@ -826,13 +902,13 @@ body[data-theme="light"] .about-section {
 }
 
 .site-footer {
-  background: var(--bg);
+  background: var(--section-wash);
   border-top: 1px solid var(--border);
   padding: 52px 0 20px;
 }
 
 body[data-theme="light"] .site-footer {
-  background: var(--bg-soft);
+  background: var(--section-wash);
 }
 
 .footer-grid {
@@ -1033,6 +1109,12 @@ html[dir="rtl"] .language-control::after {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  body[data-theme="dark"]::before,
+  body[data-theme="light"]::before,
+  body::after {
+    animation: none;
+  }
+
   .theme-toggle,
   .theme-toggle::before,
   .theme-icon,
