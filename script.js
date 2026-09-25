@@ -6,7 +6,8 @@ const languageSelect = document.querySelector('#site-language');
 const savedTheme = localStorage.getItem('revolution-theme');
 const initialTheme = savedTheme === 'light' || savedTheme === 'dark' ? savedTheme : 'dark';
 const savedLanguage = localStorage.getItem('revolution-language');
-const initialLanguage = savedLanguage === 'de' ? 'de' : 'en';
+const supportedLanguages = ['en', 'de', 'tr'];
+const initialLanguage = supportedLanguages.includes(savedLanguage) ? savedLanguage : 'en';
 let currentLanguage = initialLanguage;
 
 const germanText = {
@@ -123,6 +124,120 @@ const germanAttributes = {
   'Hoodies & Sweats manufacturing': 'Fertigung von Hoodies und Sweatshirts'
 };
 
+const turkishText = {
+  'Home': 'Ana Sayfa',
+  'Manufacturing': 'Üretim',
+  'Categories': 'Kategoriler',
+  'Capabilities': 'Yeteneklerimiz',
+  'Process': 'Süreç',
+  'About': 'Hakkımızda',
+  'FAQ': 'SSS',
+  'Contact': 'İletişim',
+  'Select language': 'Dil seçin',
+  'Custom Clothing Manufacturer': 'Özel Giyim Üreticisi',
+  'OEM & ODM Apparel Production.': 'OEM ve ODM Giyim Üretimi.',
+  'Partner with Revolution Clo for end-to-end custom clothing manufacturing. We specialize in OEM, ODM, and cut & sew production for hoodies, t-shirts, activewear, and more.': 'Uçtan uca özel giyim üretimi için Revolution Clo ile çalışın. Hoodie, tişört, spor giyim ve daha fazlasında OEM, ODM ve kesim-dikim üretiminde uzmanız.',
+  'COUNTRIES': 'ÜLKE',
+  'MOQ': 'Minimum Adet',
+  'TURNAROUND': 'ÜRETİM SÜRESİ',
+  'Premium manufacturing': 'Üstün Kalitede Üretim',
+  'Premium Custom Clothing Manufacturing for Global Brands': 'Küresel Markalar İçin Üstün Kalitede Özel Giyim Üretimi',
+  'OEM Apparel Manufacturing': 'OEM Giyim Üretimi',
+  'Our Original Equipment Manufacturing (OEM) services enable you to produce custom clothing and private label apparel under your brand name. We work with your designs, tech packs, and specifications to manufacture garments that meet your exact requirements.': 'Orijinal Ekipman Üretimi (OEM) hizmetimizle markanıza özel giyim ürünleri üretiyoruz. Tasarımlarınız, teknik föyleriniz ve belirttiğiniz özellikler doğrultusunda tam ihtiyaçlarınıza uygun ürünler hazırlıyoruz.',
+  'ODM Clothing Production': 'ODM Giyim Üretimi',
+  'Original Design Manufacturing (ODM) services provide complete design-to-production solutions for custom clothing manufacturing. If you have a concept but need design development, pattern making, and manufacturing support, our ODM clothing factory services streamline the entire process.': 'Orijinal Tasarım Üretimi (ODM) hizmetimiz, tasarımdan üretime kadar eksiksiz çözümler sunar. Bir fikriniz varsa ancak tasarım geliştirme, kalıp hazırlama ve üretim desteğine ihtiyaç duyuyorsanız tüm süreci sizin için kolaylaştırıyoruz.',
+  'Cut & Sew Manufacturing Services': 'Kesim ve Dikim Üretim Hizmetleri',
+  'Our cut & sew manufacturing capabilities handle complex garment construction with precision for custom clothing production. From pattern cutting to final stitching, we ensure consistent quality.': 'Kesim ve dikim uzmanlığımız, karmaşık giysi yapılarını hassasiyetle üretmemizi sağlar. Kalıp kesiminden son dikişe kadar istikrarlı kalite sunuyoruz.',
+  'Our promise': 'Sözümüz',
+  'Crafting Modern Streetwear.': 'Modern Sokak Modasını Üretiyoruz.',
+  'From concept to retail-ready, we manufacture the garments that define modern storefronts. Our partners trust us for consistent quality, perfect fit, and technical innovation.': 'Fikir aşamasından satışa hazır ürüne kadar modern markaları tanımlayan giysiler üretiyoruz. İş ortaklarımız bize tutarlı kalite, kusursuz kalıp ve teknik yenilik için güveniyor.',
+  'Premium Cotton': 'Üstün Kalitede Pamuk',
+  'Durable Stitching': 'Dayanıklı Dikiş',
+  'Bespoke Fit': 'Özel Kalıp',
+  'Behind the scenes': 'Üretimden Kareler',
+  'Our Production in Motion.': 'Üretimimiz Hareket Halinde.',
+  'Take a closer look at our production facility and the meticulous processes we follow to ensure every garment meets the highest quality standards.': 'Her ürünün en yüksek kalite standartlarını karşılaması için üretim tesisimize ve titizlikle yürüttüğümüz süreçlere yakından göz atın.',
+  'Our Facility': 'Üretim Tesisimiz',
+  'Production Process': 'Üretim Aşamaları',
+  'Specialized product categories': 'Uzmanlaştığımız Ürün Grupları',
+  'Specialized Product Categories': 'Uzmanlaştığımız Ürün Grupları',
+  'MOQ 75-100': 'Minimum 75-100 Adet',
+  'Activewear': 'Spor Giyim',
+  'Denim & Jackets': 'Denim ve Ceketler',
+  'Heavyweight T-Shirts': 'Kalın Kumaş Tişörtler',
+  'Hoodies & Sweats': 'Hoodie ve Sweatshirtler',
+  'Quality in every detail': 'Her Detayda Kalite',
+  'Precision in Every Stitch.': 'Her Dikişte Kusursuzluk.',
+  'High-Volume Production': 'Yüksek Hacimli Üretim',
+  'Capable of 50,000 units/month.': 'Ayda 50.000 adet üretim kapasitesi.',
+  'Premium Fabrics': 'Üstün Kalitede Kumaşlar',
+  'Curated textiles and material sourcing for your product range.': 'Ürün grubunuza özel kumaş ve malzeme tedariği.',
+  'Sustainability': 'Sürdürülebilirlik',
+  'Eco-minded production and responsible material choices.': 'Çevreye duyarlı üretim ve sorumlu malzeme seçimi.',
+  'Production expertise': 'Üretim Uzmanlığımız',
+  'Our Manufacturing Capabilities': 'Üretim Yeteneklerimiz',
+  'We handle the heavy lifting. From tech packs to logistics.': 'Teknik föylerden lojistiğe kadar tüm detayları biz üstleniyoruz.',
+  'Pattern Making & Tech Pack Development': 'Kalıp ve Teknik Föy Geliştirme',
+  'Translate your concept into production-ready specifications with accurate sizing and fit consistency.': 'Fikrinizi doğru beden ve tutarlı kalıplarla üretime hazır teknik özelliklere dönüştürüyoruz.',
+  'Fabric Sourcing & Custom Dyeing': 'Kumaş Tedariki ve Özel Boyama',
+  'Source premium materials and coordinate bespoke color matching for exact visual specifications.': 'Üstün kaliteli malzemeler tedarik ediyor, renkleri görsel beklentilerinize göre eşleştiriyoruz.',
+  'Quality Control & Inspection': 'Kalite Kontrol ve İnceleme',
+  'Implement strict inspection checkpoints to maintain consistent quality throughout every run.': 'Her üretim serisinde tutarlı kalite için sıkı kontrol aşamaları uyguluyoruz.',
+  'Global Shipping & Logistics': 'Uluslararası Gönderim ve Lojistik',
+  'Coordinate air or sea freight and export documents so your inventory reaches destination smoothly.': 'Ürünlerinizin sorunsuz ulaşması için hava veya deniz taşımacılığını ve ihracat belgelerini koordine ediyoruz.',
+  'Our process': 'Sürecimiz',
+  'The Manufacturing Process': 'Üretim Süreci',
+  'Sampling': 'Numune Hazırlama',
+  'For each order we create a prototype for your approval, allowing you to test and refine the functionality of your design before bulk production.': 'Her sipariş için onayınıza bir prototip hazırlıyoruz. Böylece seri üretim öncesinde tasarımınızı deneyip geliştirebilirsiniz.',
+  'Production & QC': 'Üretim ve Kalite Kontrol',
+  'Bulk manufacture takes place on our production line, where all items are handmade and quality checked throughout the manufacturing journey.': 'Seri üretim hattımızda her ürün özenle hazırlanır ve üretimin her aşamasında kalite kontrolünden geçer.',
+  'Delivery': 'Teslimat',
+  'Once your order is complete and quality checked, it is approved for delivery via our network of reliable global couriers.': 'Siparişiniz tamamlanıp kalite kontrolünden geçtikten sonra güvenilir uluslararası kargo ağımızla gönderilir.',
+  'About us': 'Hakkımızda',
+  'About Us': 'Hakkımızda',
+  'Revolution Manufacturing is a leading custom clothing manufacturer based in Istanbul, Turkey, specializing in premium streetwear, hoodies, t-shirts, and activewear production.': 'Revolution Manufacturing, İstanbul merkezli bir özel giyim üreticisidir. Üstün kalitede sokak modası, hoodie, tişört ve spor giyim üretiminde uzmanlaşır.',
+  'We collaborate with various brands from Europe and America, providing private label clothing manufacturing, cut & sew services, and comprehensive production solutions.': 'Avrupa ve Amerika’daki markalarla çalışıyor; markaya özel üretim, kesim-dikim hizmetleri ve kapsamlı üretim çözümleri sunuyoruz.',
+  'Our Istanbul-based factory offers low MOQ options (75-100 units) for standard products, making us an ideal partner for emerging brands and established labels seeking reliable custom clothing production.': 'İstanbul’daki fabrikamız standart ürünlerde 75-100 adet gibi düşük minimum sipariş seçenekleri sunar. Bu sayede özel giyim üretiminde güvenilir bir çözüm ortağı arayan yeni ve köklü markalar için ideal bir iş ortağıyız.',
+  '“We searched for a long time until we finally found the production facility in Turkey that suits us best!”': '“Uzun süre aradıktan sonra sonunda Türkiye’de bize en uygun üretim tesisini bulduk!”',
+  'Streetwear Brand in the United Kingdom': 'Birleşik Krallık Sokak Modası Markası',
+  'Frequently asked questions': 'Sıkça Sorulan Sorular',
+  'Frequently Asked Questions': 'Sıkça Sorulan Sorular',
+  'What is the Minimum Order Quantity (MOQ)?': 'Minimum Sipariş Miktarı (MOQ) nedir?',
+  'The minimum order quantity for our standard products such as hoodies, t-shirts, cardigans, croptops, shorts, and tracksuits is set at 75-100. For products like bags, jackets, or accessories, an individual arrangement is necessary.': 'Hoodie, tişört, hırka, crop top, şort ve eşofman gibi standart ürünlerde minimum sipariş miktarı 75-100 adettir. Çanta, ceket ve aksesuarlar için miktar ayrıca belirlenir.',
+  'How long does delivery take?': 'Teslimat ne kadar sürer?',
+  'Classic products like hoodies, t-shirts, or cardigans are essential in our daily work and therefore, even with larger quantities, short delivery times are not a problem for us.': 'Hoodie, tişört ve hırka gibi temel ürünler günlük üretimimizin parçasıdır. Bu nedenle yüksek adetlerde bile kısa teslimat süreleri sunabiliyoruz.',
+  'Can we receive a sample?': 'Numune alabilir miyiz?',
+  'We are always happy to send our own samples after the introductory conversation. Please note that there may be an additional charge for samples with printing or embroidery.': 'İlk görüşmenin ardından numunelerimizi memnuniyetle göndeririz. Baskı veya nakış içeren numuneler için ek ücret alınabilir.',
+  'What is the difference between OEM and ODM?': 'OEM ve ODM arasındaki fark nedir?',
+  'OEM means we produce garments based on your existing designs and specifications. ODM includes design development, pattern making, and manufacturing services for brands with concepts but needing full design-to-production support.': 'OEM, mevcut tasarım ve özelliklerinize göre üretim yapmamızdır. ODM ise tasarım geliştirme, kalıp hazırlama ve üretim dahil konseptten ürüne kapsamlı destek sunar.',
+  'Do you offer private label clothing manufacturing?': 'Markaya özel giyim üretimi sunuyor musunuz?',
+  'Yes, we specialize in private label clothing manufacturing. We produce custom garments under your brand name with your labels, tags, and packaging.': 'Evet. Markanıza özel giysiler üretir; ürünleri kendi etiket, marka ve ambalajlarınızla hazırlarız.',
+  'Premium apparel manufacturing partner for the world\'s most ambitious brands.': 'Dünyanın en iddialı markaları için üstün kaliteli giyim üretim ortağı.',
+  'Additional Links': 'Ek Bağlantılar',
+  'Halkali Central Neighborhood, Dereboyu Avenue No. 58, Floor 4': 'Halkalı Merkez Mahallesi, Dereboyu Caddesi No: 58, Kat: 4',
+  'Kucukcekmece, Istanbul, Turkey': 'Küçükçekmece, İstanbul, Türkiye',
+  '© 2025 Revolution Manufacturing. All rights reserved.': '© 2025 Revolution Manufacturing. Tüm hakları saklıdır.'
+};
+
+const turkishAttributes = {
+  'Revolution Clo home': 'Revolution Clo ana sayfa',
+  'Toggle navigation': 'Menüyü aç veya kapat',
+  'Main navigation': 'Ana menü',
+  'Select language': 'Dil seçin',
+  'Summary statistics': 'Özet istatistikler',
+  'Video tour of our production facility': 'Üretim tesisimizi tanıtan video',
+  'Video showing our garment production process': 'Giyim üretim sürecimizi gösteren video',
+  'Custom clothing manufacturing factory producing premium garments': 'Üstün kaliteli giysiler üreten özel giyim fabrikası',
+  'OEM Apparel Manufacturing': 'OEM giyim üretimi',
+  'ODM Clothing Production': 'ODM giyim üretimi',
+  'Cut & Sew Manufacturing Services': 'Kesim ve dikim üretim hizmetleri',
+  'Premium fabrics and materials': 'Üstün kaliteli kumaş ve malzemeler',
+  'Activewear manufacturing': 'Spor giyim üretimi',
+  'Denim & Jackets manufacturing': 'Denim ve ceket üretimi',
+  'Heavyweight T-Shirts manufacturing': 'Kalın kumaş tişört üretimi',
+  'Hoodies & Sweats manufacturing': 'Hoodie ve sweatshirt üretimi'
+};
+
 const textNodes = [];
 const textWalker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
 
@@ -152,41 +267,54 @@ const setTheme = (theme) => {
     'aria-label',
     currentLanguage === 'de'
       ? (isLight ? 'Dunkelmodus aktivieren' : 'Hellmodus aktivieren')
-      : (isLight ? 'Switch to dark mode' : 'Switch to light mode')
+      : currentLanguage === 'tr'
+        ? (isLight ? 'Gece moduna geç' : 'Gündüz moduna geç')
+        : (isLight ? 'Switch to dark mode' : 'Switch to light mode')
   );
-  themeToggle.title = currentLanguage === 'de' ? 'Design umschalten' : 'Toggle theme';
+  themeToggle.title = currentLanguage === 'de'
+    ? 'Design umschalten'
+    : currentLanguage === 'tr' ? 'Temayı değiştir' : 'Toggle theme';
   localStorage.setItem('revolution-theme', theme);
 };
 
 setTheme(initialTheme);
 
 const applyLanguage = (language) => {
-  const selectedLanguage = language === 'de' ? 'de' : 'en';
-  currentLanguage = selectedLanguage;
-  document.documentElement.lang = selectedLanguage;
-  document.body.dataset.language = selectedLanguage;
+  const resolvedLanguage = supportedLanguages.includes(language) ? language : 'en';
+  currentLanguage = resolvedLanguage;
+  document.documentElement.lang = resolvedLanguage;
+  document.body.dataset.language = resolvedLanguage;
+
+  const textDictionary = resolvedLanguage === 'de' ? germanText : resolvedLanguage === 'tr' ? turkishText : null;
+  const attributeDictionary = resolvedLanguage === 'de'
+    ? germanAttributes
+    : resolvedLanguage === 'tr' ? turkishAttributes : null;
 
   textNodes.forEach(({ node, key }) => {
-    node.nodeValue = selectedLanguage === 'de' ? (germanText[key] || key) : key;
+    node.nodeValue = textDictionary?.[key] || key;
   });
 
   translatableAttributes.forEach(({ element, attribute, value }) => {
-    element.setAttribute(attribute, selectedLanguage === 'de' ? (germanAttributes[value] || value) : value);
+    element.setAttribute(attribute, attributeDictionary?.[value] || value);
   });
 
   const description = document.querySelector('meta[name="description"]');
   if (description) {
-    description.content = selectedLanguage === 'de'
+    description.content = resolvedLanguage === 'de'
       ? 'Revolution Clo ist Hersteller für OEM-, ODM- und Cut-and-Sew-Bekleidung. Hochwertige Streetwear, Hoodies, T-Shirts, Activewear und Private-Label-Produktion.'
-      : 'Revolution Clo custom clothing manufacturer for OEM, ODM and cut & sew apparel production. Premium streetwear, hoodies, t-shirts, activewear and private label manufacturing.';
+      : resolvedLanguage === 'tr'
+        ? 'Revolution Clo; OEM, ODM ve kesim-dikim giyim üretiminde uzman, İstanbul merkezli özel giyim üreticisidir.'
+        : 'Revolution Clo custom clothing manufacturer for OEM, ODM and cut & sew apparel production. Premium streetwear, hoodies, t-shirts, activewear and private label manufacturing.';
   }
 
-  document.title = selectedLanguage === 'de'
+  document.title = resolvedLanguage === 'de'
     ? 'Revolution Clo | OEM- und ODM-Bekleidungsproduktion'
-    : 'Revolution Clo | OEM & ODM Apparel Production';
+    : resolvedLanguage === 'tr'
+      ? 'Revolution Clo | OEM ve ODM Giyim Üretimi'
+      : 'Revolution Clo | OEM & ODM Apparel Production';
 
-  if (languageSelect) languageSelect.value = selectedLanguage;
-  localStorage.setItem('revolution-language', selectedLanguage);
+  if (languageSelect) languageSelect.value = resolvedLanguage;
+  localStorage.setItem('revolution-language', resolvedLanguage);
   setTheme(document.body.dataset.theme);
 };
 
