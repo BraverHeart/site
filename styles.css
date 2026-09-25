@@ -624,6 +624,10 @@ body[data-theme="light"] .dark-section {
   background: linear-gradient(180deg, rgba(17,17,17,0.8), rgba(17,17,17,0)), var(--bg-soft);
 }
 
+body[data-theme="light"] .process-section {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.48), rgba(255, 255, 255, 0)), var(--bg-soft);
+}
+
 .feature-columns {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
