@@ -9,12 +9,12 @@
   --text: #ffffff;
   --muted: #c4c4ca;
   --muted-2: #96969f;
-  --accent: #f2cb4d;
-  --accent-secondary: #a88bf2;
-  --accent-contrast: #101010;
-  --accent-soft: rgba(242, 203, 77, 0.14);
-  --accent-border: rgba(242, 203, 77, 0.3);
-  --accent-glow: rgba(242, 203, 77, 0.2);
+  --accent: #b48cff;
+  --accent-secondary: #f2cb4d;
+  --accent-contrast: #ffffff;
+  --accent-soft: rgba(180, 140, 255, 0.18);
+  --accent-border: rgba(180, 140, 255, 0.62);
+  --accent-glow: rgba(180, 140, 255, 0.42);
   --light-bg: var(--bg-soft);
   --light-text: var(--text);
   --light-muted: var(--muted);
@@ -34,12 +34,12 @@ body[data-theme="light"] {
   --text: #111114;
   --muted: #4e4e57;
   --muted-2: #686872;
-  --accent: #7146c5;
-  --accent-secondary: #dfb91f;
+  --accent: #7040c9;
+  --accent-secondary: #e8bc16;
   --accent-contrast: #ffffff;
-  --accent-soft: rgba(113, 70, 197, 0.1);
-  --accent-border: rgba(113, 70, 197, 0.28);
-  --accent-glow: rgba(113, 70, 197, 0.18);
+  --accent-soft: rgba(112, 64, 201, 0.12);
+  --accent-border: rgba(112, 64, 201, 0.52);
+  --accent-glow: rgba(112, 64, 201, 0.28);
   --light-bg: #ffffff;
   --light-text: #111114;
   --light-muted: #4e4e57;
@@ -406,7 +406,7 @@ body[data-theme="light"] .theme-icon-moon {
 
 .stats-row div {
   padding: 18px 14px 16px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--accent-border);
   border-radius: 16px;
   background: var(--card);
 }
@@ -481,7 +481,7 @@ body[data-theme="light"] .theme-icon-moon {
   position: relative;
   aspect-ratio: 16 / 9;
   overflow: hidden;
-  border: 1px solid var(--border);
+  border: 1px solid var(--accent-border);
   border-radius: 12px;
   background: #111;
 }
@@ -516,7 +516,7 @@ body[data-theme="light"] .theme-icon-moon {
 
 .service-card {
   background: var(--card);
-  border: 1px solid var(--border);
+  border: 1px solid var(--accent-border);
   border-radius: var(--radius);
   overflow: hidden;
   transition: transform 0.2s ease, border-color 0.2s ease;
@@ -524,7 +524,8 @@ body[data-theme="light"] .theme-icon-moon {
 
 .service-card:hover {
   transform: translateY(-4px);
-  border-color: var(--accent-secondary);
+  border-color: var(--accent);
+  box-shadow: 0 0 26px var(--accent-glow);
 }
 
 .service-image img {
@@ -581,7 +582,7 @@ body[data-theme="light"] .dark-section {
   height: 470px;
   object-fit: cover;
   border-radius: 24px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--accent-border);
 }
 
 .product-grid {
@@ -592,22 +593,22 @@ body[data-theme="light"] .dark-section {
 
 .product-card {
   background: var(--card);
-  border: 1px solid var(--border);
+  border: 1px solid var(--accent-border);
   border-radius: 22px;
   overflow: hidden;
   transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
 }
 
-.product-card:nth-child(even),
-.capability-card:nth-child(even),
-.feature-box:nth-child(2) {
-  border-color: var(--accent-secondary);
+.capability-card:nth-child(odd),
+.feature-box:nth-child(2),
+.quote-box {
+  box-shadow: 0 0 26px var(--accent-glow);
 }
 
 .product-card:hover {
   transform: translateY(-7px);
   border-color: var(--accent);
-  box-shadow: var(--shadow);
+  box-shadow: 0 0 30px var(--accent-glow), var(--shadow);
 }
 
 .product-card img {
@@ -650,7 +651,7 @@ body[data-theme="light"] .process-section {
 
 .feature-box {
   padding: 28px 24px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--accent-border);
   border-radius: 20px;
   background: var(--card);
 }
@@ -693,7 +694,7 @@ body[data-theme="light"] .process-section {
 
 .capability-card {
   background: var(--card);
-  border: 1px solid var(--border);
+  border: 1px solid var(--accent-border);
   border-radius: 22px;
   padding: 28px 22px;
 }
@@ -704,10 +705,12 @@ body[data-theme="light"] .process-section {
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background: var(--accent-soft);
-  color: var(--accent-contrast);
+  border: 1px solid var(--accent-border);
+  background: var(--accent);
+  color: #fff;
   font-weight: 800;
   margin-bottom: 20px;
+  box-shadow: 0 0 22px var(--accent-glow);
 }
 
 .steps-grid {
@@ -718,7 +721,7 @@ body[data-theme="light"] .process-section {
 
 .step-item {
   padding: 30px 26px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--accent-border);
   border-radius: 22px;
   background: var(--card);
 }
@@ -727,6 +730,7 @@ body[data-theme="light"] .process-section {
   font-size: 2.8rem;
   line-height: 1;
   color: var(--accent);
+  text-shadow: 0 0 22px var(--accent-glow);
   margin-bottom: 18px;
   font-weight: 800;
 }
@@ -774,7 +778,7 @@ body[data-theme="light"] .about-section {
 }
 
 .faq-item {
-  border: 1px solid var(--border);
+  border: 1px solid var(--accent-border);
   border-radius: 18px;
   background: var(--card);
   overflow: hidden;
