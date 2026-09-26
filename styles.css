@@ -329,7 +329,26 @@ body[data-theme="light"] .site-header {
 }
 
 .brand-text {
-  font-size: 1.02rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 0.9rem;
+  letter-spacing: 0;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.brand-name {
+  color: var(--text);
+  font-weight: 900;
+  text-shadow: 0 0 9px var(--accent-glow);
+}
+
+.brand-name-accent {
+  color: var(--accent);
+  font-size: 0.78em;
+  font-weight: 900;
+  text-shadow: 0 0 8px var(--accent-glow);
 }
 
 .main-nav {
@@ -1126,10 +1145,6 @@ html[dir="rtl"] .language-control::after {
   .nav-wrap {
     min-height: 68px;
     gap: 10px;
-  }
-
-  .brand-text {
-    display: none;
   }
 
   .header-actions {
