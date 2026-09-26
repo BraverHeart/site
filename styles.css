@@ -311,14 +311,21 @@ body[data-theme="light"] .site-header {
 
 .brand-mark {
   width: 34px;
-  height: 34px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: var(--accent);
-  color: var(--bg);
-  font-size: 0.9rem;
- font-weight: 900;
+  height: 48px;
+  flex: 0 0 auto;
+  overflow: visible;
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 0 4px var(--accent-glow));
+  transition: filter 0.25s ease, transform 0.25s ease;
+}
+
+.brand:hover .brand-mark {
+  filter: drop-shadow(0 0 7px var(--accent-glow));
+  transform: scale(1.04);
 }
 
 .brand-text {
@@ -956,6 +963,15 @@ body[data-theme="light"] .site-footer {
 
 .footer-address-label {
   margin-top: 14px !important;
+}
+
+.footer-contact-column h3,
+.footer-contact-column h4,
+.site-footer .footer-contact-column ul,
+.footer-contact-column a,
+.footer-contact-column address,
+.footer-contact-column .footer-company-name {
+  color: var(--text);
 }
 
 .site-footer ul {
