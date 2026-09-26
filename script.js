@@ -102,6 +102,13 @@ const germanText = {
   'Additional Links': 'Weitere Links',
   'Halkali Central Neighborhood, Dereboyu Avenue No. 58, Floor 4': 'Halkali Merkez, Dereboyu Caddesi Nr. 58, 4. Etage',
   'Kucukcekmece, Istanbul, Turkey': 'Kucukcekmece, Istanbul, Türkei',
+  'Factory Address': 'Werksadresse',
+  'Camlitepe Neighborhood, Koruk Avenue, No. 59': 'Viertel Camlitepe, Koruk-Allee, Nr. 59',
+  'Central District, Batman, Turkey': 'Zentralbezirk, Batman, Türkei',
+  'Company Details': 'Unternehmensdaten',
+  'Registered Office': 'Eingetragener Firmensitz',
+  'Mahmutbey Neighborhood, Turgut Bey Avenue': 'Viertel Mahmutbey, Turgut-Bey-Allee',
+  'Site No. 9/2, Istanbul, Turkey': 'Anlage Nr. 9/2, Istanbul, Türkei',
   '© 2025 Zemzem Giyim. All rights reserved.': '© 2025 Zemzem Giyim. Alle Rechte vorbehalten.'
 };
 
@@ -216,6 +223,13 @@ const turkishText = {
   'Additional Links': 'Ek Bağlantılar',
   'Halkali Central Neighborhood, Dereboyu Avenue No. 58, Floor 4': 'Halkalı Merkez Mahallesi, Dereboyu Caddesi No: 58, Kat: 4',
   'Kucukcekmece, Istanbul, Turkey': 'Küçükçekmece, İstanbul, Türkiye',
+  'Factory Address': 'Fabrika Adresi',
+  'Camlitepe Neighborhood, Koruk Avenue, No. 59': 'Çamlıtepe Mahallesi, Körük Caddesi No: 59',
+  'Central District, Batman, Turkey': 'Merkez, Batman, Türkiye',
+  'Company Details': 'Şirket Bilgileri',
+  'Registered Office': 'Kayıtlı Merkez Adresi',
+  'Mahmutbey Neighborhood, Turgut Bey Avenue': 'Mahmutbey Mahallesi, Turgut Bey Caddesi',
+  'Site No. 9/2, Istanbul, Turkey': 'Site No: 9/2, İstanbul, Türkiye',
   '© 2025 Zemzem Giyim. All rights reserved.': '© 2025 Zemzem Giyim. Tüm hakları saklıdır.'
 };
 
@@ -311,6 +325,13 @@ const frenchText = {
   'Additional Links': 'Liens complémentaires',
   'Halkali Central Neighborhood, Dereboyu Avenue No. 58, Floor 4': 'Halkali Merkez, avenue Dereboyu n° 58, 4e étage',
   'Kucukcekmece, Istanbul, Turkey': 'Kucukcekmece, Istanbul, Turquie',
+  'Factory Address': 'Adresse de l’usine',
+  'Camlitepe Neighborhood, Koruk Avenue, No. 59': 'Quartier de Camlitepe, avenue Koruk, n° 59',
+  'Central District, Batman, Turkey': 'District central, Batman, Turquie',
+  'Company Details': 'Informations sur l’entreprise',
+  'Registered Office': 'Siège social',
+  'Mahmutbey Neighborhood, Turgut Bey Avenue': 'Quartier de Mahmutbey, avenue Turgut Bey',
+  'Site No. 9/2, Istanbul, Turkey': 'Site n° 9/2, Istanbul, Turquie',
   '© 2025 Zemzem Giyim. All rights reserved.': '© 2025 Zemzem Giyim. Tous droits réservés.'
 };
 
@@ -406,6 +427,13 @@ const chineseText = {
   'Additional Links': '更多链接',
   'Halkali Central Neighborhood, Dereboyu Avenue No. 58, Floor 4': 'Halkali Merkez，Dereboyu 大道 58 号，4 楼',
   'Kucukcekmece, Istanbul, Turkey': '土耳其伊斯坦布尔 Kucukcekmece',
+  'Factory Address': '工厂地址',
+  'Camlitepe Neighborhood, Koruk Avenue, No. 59': 'Camlitepe 社区，Koruk 大道 59 号',
+  'Central District, Batman, Turkey': '土耳其 Batman 中心区',
+  'Company Details': '公司信息',
+  'Registered Office': '注册办公地址',
+  'Mahmutbey Neighborhood, Turgut Bey Avenue': 'Mahmutbey 社区，Turgut Bey 大道',
+  'Site No. 9/2, Istanbul, Turkey': 'Site 9/2 号，土耳其伊斯坦布尔',
   '© 2025 Zemzem Giyim. All rights reserved.': '© 2025 Zemzem Giyim。版权所有。'
 };
 
@@ -501,6 +529,13 @@ const spanishText = {
   'Additional Links': 'Enlaces adicionales',
   'Halkali Central Neighborhood, Dereboyu Avenue No. 58, Floor 4': 'Halkali Merkez, avenida Dereboyu n.º 58, planta 4',
   'Kucukcekmece, Istanbul, Turkey': 'Kucukcekmece, Estambul, Turquía',
+  'Factory Address': 'Dirección de la fábrica',
+  'Camlitepe Neighborhood, Koruk Avenue, No. 59': 'Barrio de Camlitepe, avenida Koruk, n.º 59',
+  'Central District, Batman, Turkey': 'Distrito Central, Batman, Turquía',
+  'Company Details': 'Datos de la empresa',
+  'Registered Office': 'Domicilio social',
+  'Mahmutbey Neighborhood, Turgut Bey Avenue': 'Barrio de Mahmutbey, avenida Turgut Bey',
+  'Site No. 9/2, Istanbul, Turkey': 'Recinto n.º 9/2, Estambul, Turquía',
   '© 2025 Zemzem Giyim. All rights reserved.': '© 2025 Zemzem Giyim. Todos los derechos reservados.'
 };
 
@@ -596,6 +631,13 @@ const arabicText = {
   'Additional Links': 'روابط إضافية',
   'Halkali Central Neighborhood, Dereboyu Avenue No. 58, Floor 4': 'Halkali Merkez، شارع Dereboyu رقم 58، الطابق الرابع',
   'Kucukcekmece, Istanbul, Turkey': 'Kucukcekmece، إسطنبول، تركيا',
+  'Factory Address': 'عنوان المصنع',
+  'Camlitepe Neighborhood, Koruk Avenue, No. 59': 'حي Camlitepe، شارع Koruk، رقم 59',
+  'Central District, Batman, Turkey': 'المنطقة المركزية، Batman، تركيا',
+  'Company Details': 'بيانات الشركة',
+  'Registered Office': 'المقر المسجل',
+  'Mahmutbey Neighborhood, Turgut Bey Avenue': 'حي Mahmutbey، شارع Turgut Bey',
+  'Site No. 9/2, Istanbul, Turkey': 'المجمع رقم 9/2، إسطنبول، تركيا',
   '© 2025 Zemzem Giyim. All rights reserved.': '© 2025 Zemzem Giyim. جميع الحقوق محفوظة.'
 };
 
