@@ -22,7 +22,7 @@ const germanText = {
   'Select language': 'Sprache auswählen',
   'Custom Clothing Manufacturer': 'Hersteller für individuelle Bekleidung',
   'OEM & ODM Apparel Production.': 'OEM- und ODM-Bekleidungsproduktion.',
-  'Partner with Revolution Clo for end-to-end custom clothing manufacturing. We specialize in OEM, ODM, and cut & sew production for hoodies, t-shirts, activewear, and more.': 'Setzen Sie bei der kompletten Herstellung individueller Bekleidung auf Revolution Clo. Wir sind auf OEM-, ODM- und Cut-and-Sew-Produktion für Hoodies, T-Shirts, Activewear und mehr spezialisiert.',
+  'Partner with Zemzem Giyim for end-to-end custom clothing manufacturing. We specialize in OEM, ODM, and cut & sew production for hoodies, t-shirts, activewear, and more.': 'Setzen Sie bei der kompletten Herstellung individueller Bekleidung auf Zemzem Giyim. Wir sind auf OEM-, ODM- und Cut-and-Sew-Produktion für Hoodies, T-Shirts, Activewear und mehr spezialisiert.',
   'COUNTRIES': 'LÄNDER',
   'MOQ': 'Mindestmenge',
   'TURNAROUND': 'DURCHLAUFZEIT',
@@ -81,7 +81,7 @@ const germanText = {
   'Once your order is complete and quality checked, it is approved for delivery via our network of reliable global couriers.': 'Nach Abschluss und Qualitätsprüfung wird Ihre Bestellung für den Versand mit unseren zuverlässigen internationalen Logistikpartnern freigegeben.',
   'About us': 'Über uns',
   'About Us': 'Über uns',
-  'Revolution Manufacturing is a leading custom clothing manufacturer based in Istanbul, Turkey, specializing in premium streetwear, hoodies, t-shirts, and activewear production.': 'Revolution Manufacturing ist ein führender Hersteller für individuelle Bekleidung mit Sitz in Istanbul, Türkei. Das Unternehmen ist auf hochwertige Streetwear, Hoodies, T-Shirts und Activewear spezialisiert.',
+  'Zemzem Giyim is a leading custom clothing manufacturer based in Istanbul, Turkey, specializing in premium streetwear, hoodies, t-shirts, and activewear production.': 'Zemzem Giyim ist ein führender Hersteller für individuelle Bekleidung mit Sitz in Istanbul, Türkei. Das Unternehmen ist auf hochwertige Streetwear, Hoodies, T-Shirts und Activewear spezialisiert.',
   'We collaborate with various brands from Europe and America, providing private label clothing manufacturing, cut & sew services, and comprehensive production solutions.': 'Wir arbeiten mit Marken aus Europa und Amerika zusammen und bieten Private-Label-Fertigung, Cut-and-Sew-Services sowie umfassende Produktionslösungen.',
   'Our Istanbul-based factory offers low MOQ options (75-100 units) for standard products, making us an ideal partner for emerging brands and established labels seeking reliable custom clothing production.': 'Unsere Produktionsstätte in Istanbul bietet für Standardprodukte niedrige Mindestmengen von 75 bis 100 Stück. Damit sind wir ein idealer Partner für aufstrebende Marken und etablierte Labels.',
   '“We searched for a long time until we finally found the production facility in Turkey that suits us best!”': '„Wir haben lange gesucht, bis wir endlich die Produktionsstätte in der Türkei gefunden haben, die am besten zu uns passt!“',
@@ -102,11 +102,11 @@ const germanText = {
   'Additional Links': 'Weitere Links',
   'Halkali Central Neighborhood, Dereboyu Avenue No. 58, Floor 4': 'Halkali Merkez, Dereboyu Caddesi Nr. 58, 4. Etage',
   'Kucukcekmece, Istanbul, Turkey': 'Kucukcekmece, Istanbul, Türkei',
-  '© 2025 Revolution Manufacturing. All rights reserved.': '© 2025 Revolution Manufacturing. Alle Rechte vorbehalten.'
+  '© 2025 Zemzem Giyim. All rights reserved.': '© 2025 Zemzem Giyim. Alle Rechte vorbehalten.'
 };
 
 const germanAttributes = {
-  'Revolution Clo home': 'Revolution Clo Startseite',
+  'Zemzem Giyim home': 'Zemzem Giyim Startseite',
   'Toggle navigation': 'Navigation umschalten',
   'Main navigation': 'Hauptnavigation',
   'Select language': 'Sprache auswählen',
@@ -136,7 +136,7 @@ const turkishText = {
   'Select language': 'Dil seçin',
   'Custom Clothing Manufacturer': 'Özel Giyim Üreticisi',
   'OEM & ODM Apparel Production.': 'OEM ve ODM Giyim Üretimi.',
-  'Partner with Revolution Clo for end-to-end custom clothing manufacturing. We specialize in OEM, ODM, and cut & sew production for hoodies, t-shirts, activewear, and more.': 'Uçtan uca özel giyim üretimi için Revolution Clo ile çalışın. Hoodie, tişört, spor giyim ve daha fazlasında OEM, ODM ve kesim-dikim üretiminde uzmanız.',
+  'Partner with Zemzem Giyim for end-to-end custom clothing manufacturing. We specialize in OEM, ODM, and cut & sew production for hoodies, t-shirts, activewear, and more.': 'Uçtan uca özel giyim üretimi için Zemzem Giyim ile çalışın. Hoodie, tişört, spor giyim ve daha fazlasında OEM, ODM ve kesim-dikim üretiminde uzmanız.',
   'COUNTRIES': 'ÜLKE',
   'MOQ': 'Minimum Adet',
   'TURNAROUND': 'ÜRETİM SÜRESİ',
@@ -195,7 +195,7 @@ const turkishText = {
   'Once your order is complete and quality checked, it is approved for delivery via our network of reliable global couriers.': 'Siparişiniz tamamlanıp kalite kontrolünden geçtikten sonra güvenilir uluslararası kargo ağımızla gönderilir.',
   'About us': 'Hakkımızda',
   'About Us': 'Hakkımızda',
-  'Revolution Manufacturing is a leading custom clothing manufacturer based in Istanbul, Turkey, specializing in premium streetwear, hoodies, t-shirts, and activewear production.': 'Revolution Manufacturing, İstanbul merkezli bir özel giyim üreticisidir. Üstün kalitede sokak modası, hoodie, tişört ve spor giyim üretiminde uzmanlaşır.',
+  'Zemzem Giyim is a leading custom clothing manufacturer based in Istanbul, Turkey, specializing in premium streetwear, hoodies, t-shirts, and activewear production.': 'Zemzem Giyim, İstanbul merkezli bir özel giyim üreticisidir. Üstün kalitede sokak modası, hoodie, tişört ve spor giyim üretiminde uzmanlaşır.',
   'We collaborate with various brands from Europe and America, providing private label clothing manufacturing, cut & sew services, and comprehensive production solutions.': 'Avrupa ve Amerika’daki markalarla çalışıyor; markaya özel üretim, kesim-dikim hizmetleri ve kapsamlı üretim çözümleri sunuyoruz.',
   'Our Istanbul-based factory offers low MOQ options (75-100 units) for standard products, making us an ideal partner for emerging brands and established labels seeking reliable custom clothing production.': 'İstanbul’daki fabrikamız standart ürünlerde 75-100 adet gibi düşük minimum sipariş seçenekleri sunar. Bu sayede özel giyim üretiminde güvenilir bir çözüm ortağı arayan yeni ve köklü markalar için ideal bir iş ortağıyız.',
   '“We searched for a long time until we finally found the production facility in Turkey that suits us best!”': '“Uzun süre aradıktan sonra sonunda Türkiye’de bize en uygun üretim tesisini bulduk!”',
@@ -216,7 +216,7 @@ const turkishText = {
   'Additional Links': 'Ek Bağlantılar',
   'Halkali Central Neighborhood, Dereboyu Avenue No. 58, Floor 4': 'Halkalı Merkez Mahallesi, Dereboyu Caddesi No: 58, Kat: 4',
   'Kucukcekmece, Istanbul, Turkey': 'Küçükçekmece, İstanbul, Türkiye',
-  '© 2025 Revolution Manufacturing. All rights reserved.': '© 2025 Revolution Manufacturing. Tüm hakları saklıdır.'
+  '© 2025 Zemzem Giyim. All rights reserved.': '© 2025 Zemzem Giyim. Tüm hakları saklıdır.'
 };
 
 const frenchText = {
@@ -231,7 +231,7 @@ const frenchText = {
   'Select language': 'Choisir la langue',
   'Custom Clothing Manufacturer': 'Fabricant de vêtements sur mesure',
   'OEM & ODM Apparel Production.': 'Production de vêtements OEM et ODM.',
-  'Partner with Revolution Clo for end-to-end custom clothing manufacturing. We specialize in OEM, ODM, and cut & sew production for hoodies, t-shirts, activewear, and more.': 'Confiez à Revolution Clo la fabrication complète de vos vêtements personnalisés. Nous sommes spécialisés dans la production OEM, ODM et coupe-couture de sweats à capuche, t-shirts, vêtements de sport et bien plus encore.',
+  'Partner with Zemzem Giyim for end-to-end custom clothing manufacturing. We specialize in OEM, ODM, and cut & sew production for hoodies, t-shirts, activewear, and more.': 'Confiez à Zemzem Giyim la fabrication complète de vos vêtements personnalisés. Nous sommes spécialisés dans la production OEM, ODM et coupe-couture de sweats à capuche, t-shirts, vêtements de sport et bien plus encore.',
   'COUNTRIES': 'PAYS',
   'MOQ': 'Quantité minimale',
   'TURNAROUND': 'DÉLAI',
@@ -290,7 +290,7 @@ const frenchText = {
   'Once your order is complete and quality checked, it is approved for delivery via our network of reliable global couriers.': 'Une fois votre commande terminée et contrôlée, elle est expédiée par notre réseau fiable de transporteurs internationaux.',
   'About us': 'À propos',
   'About Us': 'À propos de nous',
-  'Revolution Manufacturing is a leading custom clothing manufacturer based in Istanbul, Turkey, specializing in premium streetwear, hoodies, t-shirts, and activewear production.': 'Revolution Manufacturing est un fabricant de vêtements personnalisés basé à Istanbul, en Turquie, spécialisé dans le streetwear haut de gamme, les sweats à capuche, les t-shirts et les vêtements de sport.',
+  'Zemzem Giyim is a leading custom clothing manufacturer based in Istanbul, Turkey, specializing in premium streetwear, hoodies, t-shirts, and activewear production.': 'Zemzem Giyim est un fabricant de vêtements personnalisés basé à Istanbul, en Turquie, spécialisé dans le streetwear haut de gamme, les sweats à capuche, les t-shirts et les vêtements de sport.',
   'We collaborate with various brands from Europe and America, providing private label clothing manufacturing, cut & sew services, and comprehensive production solutions.': 'Nous collaborons avec des marques d’Europe et d’Amérique et proposons la fabrication en marque propre, des services de coupe et confection ainsi que des solutions de production complètes.',
   'Our Istanbul-based factory offers low MOQ options (75-100 units) for standard products, making us an ideal partner for emerging brands and established labels seeking reliable custom clothing production.': 'Notre usine d’Istanbul propose des quantités minimales réduites, de 75 à 100 pièces pour les produits standards. Nous sommes un partenaire idéal pour les jeunes marques comme pour les enseignes établies.',
   '“We searched for a long time until we finally found the production facility in Turkey that suits us best!”': '« Nous avons longtemps cherché avant de trouver enfin le site de production en Turquie qui nous convient le mieux ! »',
@@ -311,7 +311,7 @@ const frenchText = {
   'Additional Links': 'Liens complémentaires',
   'Halkali Central Neighborhood, Dereboyu Avenue No. 58, Floor 4': 'Halkali Merkez, avenue Dereboyu n° 58, 4e étage',
   'Kucukcekmece, Istanbul, Turkey': 'Kucukcekmece, Istanbul, Turquie',
-  '© 2025 Revolution Manufacturing. All rights reserved.': '© 2025 Revolution Manufacturing. Tous droits réservés.'
+  '© 2025 Zemzem Giyim. All rights reserved.': '© 2025 Zemzem Giyim. Tous droits réservés.'
 };
 
 const chineseText = {
@@ -326,7 +326,7 @@ const chineseText = {
   'Select language': '选择语言',
   'Custom Clothing Manufacturer': '定制服装制造商',
   'OEM & ODM Apparel Production.': 'OEM 与 ODM 服装生产。',
-  'Partner with Revolution Clo for end-to-end custom clothing manufacturing. We specialize in OEM, ODM, and cut & sew production for hoodies, t-shirts, activewear, and more.': '选择 Revolution Clo，获得一站式定制服装制造服务。我们专注于连帽衫、T 恤、运动服等产品的 OEM、ODM 和裁剪缝制生产。',
+  'Partner with Zemzem Giyim for end-to-end custom clothing manufacturing. We specialize in OEM, ODM, and cut & sew production for hoodies, t-shirts, activewear, and more.': '选择 Zemzem Giyim，获得一站式定制服装制造服务。我们专注于连帽衫、T 恤、运动服等产品的 OEM、ODM 和裁剪缝制生产。',
   'COUNTRIES': '覆盖国家',
   'MOQ': '起订量',
   'TURNAROUND': '生产周期',
@@ -385,7 +385,7 @@ const chineseText = {
   'Once your order is complete and quality checked, it is approved for delivery via our network of reliable global couriers.': '订单完成并通过质量检查后，我们将通过可靠的全球承运网络安排发货。',
   'About us': '关于我们',
   'About Us': '关于我们',
-  'Revolution Manufacturing is a leading custom clothing manufacturer based in Istanbul, Turkey, specializing in premium streetwear, hoodies, t-shirts, and activewear production.': 'Revolution Manufacturing 是一家位于土耳其伊斯坦布尔的定制服装制造商，专注于高端街头服饰、连帽衫、T 恤和运动服生产。',
+  'Zemzem Giyim is a leading custom clothing manufacturer based in Istanbul, Turkey, specializing in premium streetwear, hoodies, t-shirts, and activewear production.': 'Zemzem Giyim 是一家位于土耳其伊斯坦布尔的定制服装制造商，专注于高端街头服饰、连帽衫、T 恤和运动服生产。',
   'We collaborate with various brands from Europe and America, providing private label clothing manufacturing, cut & sew services, and comprehensive production solutions.': '我们与欧洲和美洲的品牌合作，提供自有品牌服装制造、裁剪缝制服务及完整生产解决方案。',
   'Our Istanbul-based factory offers low MOQ options (75-100 units) for standard products, making us an ideal partner for emerging brands and established labels seeking reliable custom clothing production.': '我们在伊斯坦布尔的工厂为标准产品提供 75-100 件的低起订量，是新兴品牌和成熟品牌值得信赖的定制服装生产伙伴。',
   '“We searched for a long time until we finally found the production facility in Turkey that suits us best!”': '“经过长时间寻找，我们终于在土耳其找到了最适合我们的生产工厂！”',
@@ -406,7 +406,7 @@ const chineseText = {
   'Additional Links': '更多链接',
   'Halkali Central Neighborhood, Dereboyu Avenue No. 58, Floor 4': 'Halkali Merkez，Dereboyu 大道 58 号，4 楼',
   'Kucukcekmece, Istanbul, Turkey': '土耳其伊斯坦布尔 Kucukcekmece',
-  '© 2025 Revolution Manufacturing. All rights reserved.': '© 2025 Revolution Manufacturing。版权所有。'
+  '© 2025 Zemzem Giyim. All rights reserved.': '© 2025 Zemzem Giyim。版权所有。'
 };
 
 const spanishText = {
@@ -421,7 +421,7 @@ const spanishText = {
   'Select language': 'Seleccionar idioma',
   'Custom Clothing Manufacturer': 'Fabricante de ropa personalizada',
   'OEM & ODM Apparel Production.': 'Producción de prendas OEM y ODM.',
-  'Partner with Revolution Clo for end-to-end custom clothing manufacturing. We specialize in OEM, ODM, and cut & sew production for hoodies, t-shirts, activewear, and more.': 'Confía en Revolution Clo para la fabricación integral de ropa personalizada. Nos especializamos en producción OEM, ODM y corte y confección de sudaderas, camisetas, ropa deportiva y mucho más.',
+  'Partner with Zemzem Giyim for end-to-end custom clothing manufacturing. We specialize in OEM, ODM, and cut & sew production for hoodies, t-shirts, activewear, and more.': 'Confía en Zemzem Giyim para la fabricación integral de ropa personalizada. Nos especializamos en producción OEM, ODM y corte y confección de sudaderas, camisetas, ropa deportiva y mucho más.',
   'COUNTRIES': 'PAÍSES',
   'MOQ': 'Pedido mínimo',
   'TURNAROUND': 'PLAZO',
@@ -480,7 +480,7 @@ const spanishText = {
   'Once your order is complete and quality checked, it is approved for delivery via our network of reliable global couriers.': 'Una vez terminado y revisado tu pedido, lo enviamos mediante nuestra red de transportistas internacionales de confianza.',
   'About us': 'Sobre nosotros',
   'About Us': 'Sobre nosotros',
-  'Revolution Manufacturing is a leading custom clothing manufacturer based in Istanbul, Turkey, specializing in premium streetwear, hoodies, t-shirts, and activewear production.': 'Revolution Manufacturing es un fabricante de ropa personalizada con sede en Estambul, Turquía, especializado en moda urbana prémium, sudaderas con capucha, camisetas y ropa deportiva.',
+  'Zemzem Giyim is a leading custom clothing manufacturer based in Istanbul, Turkey, specializing in premium streetwear, hoodies, t-shirts, and activewear production.': 'Zemzem Giyim es un fabricante de ropa personalizada con sede en Estambul, Turquía, especializado en moda urbana prémium, sudaderas con capucha, camisetas y ropa deportiva.',
   'We collaborate with various brands from Europe and America, providing private label clothing manufacturing, cut & sew services, and comprehensive production solutions.': 'Colaboramos con marcas de Europa y América y ofrecemos fabricación de marca propia, servicios de corte y confección y soluciones integrales de producción.',
   'Our Istanbul-based factory offers low MOQ options (75-100 units) for standard products, making us an ideal partner for emerging brands and established labels seeking reliable custom clothing production.': 'Nuestra fábrica en Estambul ofrece pedidos mínimos bajos, de 75 a 100 unidades para productos estándar. Somos el socio ideal para marcas emergentes y consolidadas que buscan una producción fiable.',
   '“We searched for a long time until we finally found the production facility in Turkey that suits us best!”': '«Buscamos durante mucho tiempo hasta encontrar por fin en Turquía la fábrica que mejor se adapta a nosotros».',
@@ -501,7 +501,7 @@ const spanishText = {
   'Additional Links': 'Enlaces adicionales',
   'Halkali Central Neighborhood, Dereboyu Avenue No. 58, Floor 4': 'Halkali Merkez, avenida Dereboyu n.º 58, planta 4',
   'Kucukcekmece, Istanbul, Turkey': 'Kucukcekmece, Estambul, Turquía',
-  '© 2025 Revolution Manufacturing. All rights reserved.': '© 2025 Revolution Manufacturing. Todos los derechos reservados.'
+  '© 2025 Zemzem Giyim. All rights reserved.': '© 2025 Zemzem Giyim. Todos los derechos reservados.'
 };
 
 const arabicText = {
@@ -516,7 +516,7 @@ const arabicText = {
   'Select language': 'اختر اللغة',
   'Custom Clothing Manufacturer': 'مصنّع ملابس حسب الطلب',
   'OEM & ODM Apparel Production.': 'تصنيع الملابس بنظامي OEM وODM.',
-  'Partner with Revolution Clo for end-to-end custom clothing manufacturing. We specialize in OEM, ODM, and cut & sew production for hoodies, t-shirts, activewear, and more.': 'تعاون مع Revolution Clo لتصنيع الملابس حسب الطلب من البداية إلى النهاية. نحن متخصصون في إنتاج الملابس بنظامي OEM وODM والقص والخياطة للسترات ذات القلنسوة والقمصان والملابس الرياضية وغيرها.',
+  'Partner with Zemzem Giyim for end-to-end custom clothing manufacturing. We specialize in OEM, ODM, and cut & sew production for hoodies, t-shirts, activewear, and more.': 'تعاون مع Zemzem Giyim لتصنيع الملابس حسب الطلب من البداية إلى النهاية. نحن متخصصون في إنتاج الملابس بنظامي OEM وODM والقص والخياطة للسترات ذات القلنسوة والقمصان والملابس الرياضية وغيرها.',
   'COUNTRIES': 'دولة',
   'MOQ': 'الحد الأدنى للطلب',
   'TURNAROUND': 'مدة الإنتاج',
@@ -575,7 +575,7 @@ const arabicText = {
   'Once your order is complete and quality checked, it is approved for delivery via our network of reliable global couriers.': 'بعد اكتمال طلبك وفحص جودته، نرسله عبر شبكة شركات الشحن الدولية الموثوقة لدينا.',
   'About us': 'من نحن',
   'About Us': 'من نحن',
-  'Revolution Manufacturing is a leading custom clothing manufacturer based in Istanbul, Turkey, specializing in premium streetwear, hoodies, t-shirts, and activewear production.': 'Revolution Manufacturing شركة رائدة لتصنيع الملابس حسب الطلب، مقرها إسطنبول في تركيا، ومتخصصة في أزياء الشارع الفاخرة والسترات ذات القلنسوة والقمصان والملابس الرياضية.',
+  'Zemzem Giyim is a leading custom clothing manufacturer based in Istanbul, Turkey, specializing in premium streetwear, hoodies, t-shirts, and activewear production.': 'Zemzem Giyim شركة رائدة لتصنيع الملابس حسب الطلب، مقرها إسطنبول في تركيا، ومتخصصة في أزياء الشارع الفاخرة والسترات ذات القلنسوة والقمصان والملابس الرياضية.',
   'We collaborate with various brands from Europe and America, providing private label clothing manufacturing, cut & sew services, and comprehensive production solutions.': 'نتعاون مع علامات تجارية من أوروبا وأمريكا ونقدم تصنيع الملابس بعلامات خاصة وخدمات القص والخياطة وحلول إنتاج متكاملة.',
   'Our Istanbul-based factory offers low MOQ options (75-100 units) for standard products, making us an ideal partner for emerging brands and established labels seeking reliable custom clothing production.': 'يوفر مصنعنا في إسطنبول حداً أدنى منخفضاً للطلبات من 75 إلى 100 قطعة للمنتجات القياسية، مما يجعلنا شريكاً مثالياً للعلامات التجارية الناشئة والراسخة.',
   '“We searched for a long time until we finally found the production facility in Turkey that suits us best!”': '"بحثنا طويلاً حتى وجدنا أخيراً منشأة الإنتاج في تركيا الأنسب لنا!"',
@@ -596,11 +596,11 @@ const arabicText = {
   'Additional Links': 'روابط إضافية',
   'Halkali Central Neighborhood, Dereboyu Avenue No. 58, Floor 4': 'Halkali Merkez، شارع Dereboyu رقم 58، الطابق الرابع',
   'Kucukcekmece, Istanbul, Turkey': 'Kucukcekmece، إسطنبول، تركيا',
-  '© 2025 Revolution Manufacturing. All rights reserved.': '© 2025 Revolution Manufacturing. جميع الحقوق محفوظة.'
+  '© 2025 Zemzem Giyim. All rights reserved.': '© 2025 Zemzem Giyim. جميع الحقوق محفوظة.'
 };
 
 const turkishAttributes = {
-  'Revolution Clo home': 'Revolution Clo ana sayfa',
+  'Zemzem Giyim home': 'Zemzem Giyim ana sayfa',
   'Toggle navigation': 'Menüyü aç veya kapat',
   'Main navigation': 'Ana menü',
   'Select language': 'Dil seçin',
@@ -619,7 +619,7 @@ const turkishAttributes = {
 };
 
 const frenchAttributes = {
-  'Revolution Clo home': 'Accueil Revolution Clo',
+  'Zemzem Giyim home': 'Accueil Zemzem Giyim',
   'Toggle navigation': 'Afficher ou masquer la navigation',
   'Main navigation': 'Navigation principale',
   'Select language': 'Choisir la langue',
@@ -638,7 +638,7 @@ const frenchAttributes = {
 };
 
 const chineseAttributes = {
-  'Revolution Clo home': 'Revolution Clo 首页',
+  'Zemzem Giyim home': 'Zemzem Giyim 首页',
   'Toggle navigation': '切换导航菜单',
   'Main navigation': '主导航',
   'Select language': '选择语言',
@@ -657,7 +657,7 @@ const chineseAttributes = {
 };
 
 const spanishAttributes = {
-  'Revolution Clo home': 'Inicio de Revolution Clo',
+  'Zemzem Giyim home': 'Inicio de Zemzem Giyim',
   'Toggle navigation': 'Mostrar u ocultar navegación',
   'Main navigation': 'Navegación principal',
   'Select language': 'Seleccionar idioma',
@@ -676,7 +676,7 @@ const spanishAttributes = {
 };
 
 const arabicAttributes = {
-  'Revolution Clo home': 'الصفحة الرئيسية لـ Revolution Clo',
+  'Zemzem Giyim home': 'الصفحة الرئيسية لـ Zemzem Giyim',
   'Toggle navigation': 'إظهار أو إخفاء القائمة',
   'Main navigation': 'القائمة الرئيسية',
   'Select language': 'اختر اللغة',
@@ -724,32 +724,32 @@ const themeLabels = {
 
 const pageMetadata = {
   en: {
-    title: 'Revolution Clo | OEM & ODM Apparel Production',
-    description: 'Revolution Clo custom clothing manufacturer for OEM, ODM and cut & sew apparel production. Premium streetwear, hoodies, t-shirts, activewear and private label manufacturing.'
+    title: 'Zemzem Giyim | OEM & ODM Apparel Production',
+    description: 'Zemzem Giyim custom clothing manufacturer for OEM, ODM and cut & sew apparel production. Premium streetwear, hoodies, t-shirts, activewear and private label manufacturing.'
   },
   de: {
-    title: 'Revolution Clo | OEM- und ODM-Bekleidungsproduktion',
-    description: 'Revolution Clo ist Hersteller für OEM-, ODM- und Cut-and-Sew-Bekleidung. Hochwertige Streetwear, Hoodies, T-Shirts, Activewear und Private-Label-Produktion.'
+    title: 'Zemzem Giyim | OEM- und ODM-Bekleidungsproduktion',
+    description: 'Zemzem Giyim ist Hersteller für OEM-, ODM- und Cut-and-Sew-Bekleidung. Hochwertige Streetwear, Hoodies, T-Shirts, Activewear und Private-Label-Produktion.'
   },
   tr: {
-    title: 'Revolution Clo | OEM ve ODM Giyim Üretimi',
-    description: 'Revolution Clo; OEM, ODM ve kesim-dikim giyim üretiminde uzman, İstanbul merkezli özel giyim üreticisidir.'
+    title: 'Zemzem Giyim | OEM ve ODM Giyim Üretimi',
+    description: 'Zemzem Giyim; OEM, ODM ve kesim-dikim giyim üretiminde uzman, İstanbul merkezli özel giyim üreticisidir.'
   },
   fr: {
-    title: 'Revolution Clo | Production de vêtements OEM et ODM',
-    description: 'Revolution Clo, fabricant de vêtements personnalisés spécialisé dans la production OEM, ODM et coupe-couture. Streetwear haut de gamme, sweats, t-shirts, vêtements de sport et marque propre.'
+    title: 'Zemzem Giyim | Production de vêtements OEM et ODM',
+    description: 'Zemzem Giyim, fabricant de vêtements personnalisés spécialisé dans la production OEM, ODM et coupe-couture. Streetwear haut de gamme, sweats, t-shirts, vêtements de sport et marque propre.'
   },
   zh: {
-    title: 'Revolution Clo | OEM 与 ODM 服装生产',
-    description: 'Revolution Clo 专注于 OEM、ODM 和裁剪缝制服装生产，提供高端街头服饰、连帽衫、T 恤、运动服和自有品牌制造服务。'
+    title: 'Zemzem Giyim | OEM 与 ODM 服装生产',
+    description: 'Zemzem Giyim 专注于 OEM、ODM 和裁剪缝制服装生产，提供高端街头服饰、连帽衫、T 恤、运动服和自有品牌制造服务。'
   },
   es: {
-    title: 'Revolution Clo | Producción de prendas OEM y ODM',
-    description: 'Revolution Clo fabrica ropa personalizada y se especializa en producción OEM, ODM y corte y confección. Moda urbana prémium, sudaderas, camisetas, ropa deportiva y marca propia.'
+    title: 'Zemzem Giyim | Producción de prendas OEM y ODM',
+    description: 'Zemzem Giyim fabrica ropa personalizada y se especializa en producción OEM, ODM y corte y confección. Moda urbana prémium, sudaderas, camisetas, ropa deportiva y marca propia.'
   },
   ar: {
-    title: 'Revolution Clo | تصنيع الملابس بنظامي OEM وODM',
-    description: 'Revolution Clo شركة متخصصة في تصنيع الملابس حسب الطلب بنظامي OEM وODM والقص والخياطة، بما في ذلك أزياء الشارع والسترات والقمصان والملابس الرياضية والعلامات التجارية الخاصة.'
+    title: 'Zemzem Giyim | تصنيع الملابس بنظامي OEM وODM',
+    description: 'Zemzem Giyim شركة متخصصة في تصنيع الملابس حسب الطلب بنظامي OEM وODM والقص والخياطة، بما في ذلك أزياء الشارع والسترات والقمصان والملابس الرياضية والعلامات التجارية الخاصة.'
   }
 };
 
